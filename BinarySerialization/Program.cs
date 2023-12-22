@@ -1,7 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using BinarySerialization;
+﻿using BinarySerialization;
 using CommonLibrary;
+using System.Text;
 
 Console.WriteLine("Department Name:");
 var departmentName = Console.ReadLine();
@@ -17,6 +16,20 @@ if (employees != null && filePath != null)
     department.Employees = employeesNames;
     department.DepartmentName = departmentName;
     BinarySerializationHelper.Serialize(department, filePath);
+}
+
+Console.WriteLine("Deserialized Department:");
+
+if (filePath != null)
+{
+    var deserializedDepartment = BinarySerializationHelper.Deserialize<Department>(filePath);
+    var resultSb = new StringBuilder();
+    resultSb.Append($"Department Name: {deserializedDepartment?.DepartmentName}\n");
+    foreach (var employee in deserializedDepartment.Employees)
+    {
+        resultSb.Append($"Employee Name: {employee.EmployeeName} \n");
+    }
+    Console.WriteLine(resultSb.ToString());
 }
 
 Console.WriteLine("Thanks for use our serializer :P");

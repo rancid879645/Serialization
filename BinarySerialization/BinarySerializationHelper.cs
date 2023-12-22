@@ -1,5 +1,5 @@
-﻿using CommonLibrary;
-using ProtoBuf;
+﻿using ProtoBuf;
+using System.Text.Json;
 
 
 namespace BinarySerialization
@@ -12,7 +12,7 @@ namespace BinarySerialization
             Serializer.Serialize(file, data);
         }
 
-        public static T Deserialize<T>(string filePath)
+        public static T? Deserialize<T>(string filePath)
         {
             using var file = File.OpenRead(filePath);
             return Serializer.Deserialize<T>(file);
