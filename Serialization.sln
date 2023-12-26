@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySerialization", "BinarySerialization\BinarySerialization.csproj", "{279FF6DE-3D53-4A05-A873-944DC8135D85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySerialization", "BinarySerialization\BinarySerialization.csproj", "{279FF6DE-3D53-4A05-A873-944DC8135D85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLSerialization", "XMLSerialization\XMLSerialization.csproj", "{A4DA27F9-6133-4AD9-9514-AB914EBD7F82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XMLSerialization", "XMLSerialization\XMLSerialization.csproj", "{A4DA27F9-6133-4AD9-9514-AB914EBD7F82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonSerialization", "JsonSerialization\JsonSerialization.csproj", "{6C305EBB-65B9-4645-B48B-645984BB6407}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonSerialization", "JsonSerialization\JsonSerialization.csproj", "{6C305EBB-65B9-4645-B48B-645984BB6407}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLibrary", "CommonLibrary\CommonLibrary.csproj", "{A5AAE88D-F640-4E63-9680-10616F4DDF1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLibrary", "CommonLibrary\CommonLibrary.csproj", "{A5AAE88D-F640-4E63-9680-10616F4DDF1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2ISerializable", "Task2ISerializable\Task2ISerializable.csproj", "{8C80D17B-B00A-4A77-8056-E37B98BF7D9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A5AAE88D-F640-4E63-9680-10616F4DDF1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5AAE88D-F640-4E63-9680-10616F4DDF1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5AAE88D-F640-4E63-9680-10616F4DDF1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C80D17B-B00A-4A77-8056-E37B98BF7D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C80D17B-B00A-4A77-8056-E37B98BF7D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C80D17B-B00A-4A77-8056-E37B98BF7D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C80D17B-B00A-4A77-8056-E37B98BF7D9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
