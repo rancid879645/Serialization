@@ -1,5 +1,4 @@
 ﻿using ProtoBuf;
-using System.Text.Json;
 
 
 namespace BinarySerialization
