@@ -9,8 +9,8 @@ namespace Task2ISerializable.Model
 
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
-            info.AddValue("RoleId", RoleId);
-            info.AddValue("RoleName", RoleName);
+            info.AddValue(nameof(RoleId), RoleId);
+            info.AddValue(nameof(RoleName), RoleName);
         }
     }
 }
