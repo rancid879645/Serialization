@@ -1,13 +1,12 @@
 ﻿using ProtoBuf;
-using System;
 
-namespace CommonLibrary
+namespace Task3Clonable.Model
 {
     [Serializable]
     [ProtoContract]
     public class Employee
     {
         [ProtoMember(1)]
-        public string EmployeeName{ get; set; }
+        public string EmployeeName { get; set; }
     }
 }
